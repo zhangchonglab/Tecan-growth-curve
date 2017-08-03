@@ -39,8 +39,6 @@ python TecanDataProcessing.py rawdata.txt Configure.txt prefix
 名字分别是prefix.processedmean.txt 和prefix.processedstd.txt，其中prefix是上一个命令里面自定义的前缀名。mean文件和std文件分别表示一个sample的多孔平均值和标准差（注意，这里使用的是population std,也就是sigma^2/sqrt(n)）。该文件可以直接导入到excel里面进行作图处理（推荐使用plotly，https://plot.ly/plot）
 Tecan文件夹下也有两个真实数据处理得到的输出文件。
 
-
-
 很简单的程序和使用，一秒钟就可以搞定Tecan输出的冗长excel后处理，hopefully helpful and wish you enjoy:)
 
-If any question, 请联系王天民。
+If any question, 请联系王天民 wtm0217@gmail.com。
