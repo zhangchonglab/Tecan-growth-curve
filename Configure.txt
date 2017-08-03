@@ -1,0 +1,15 @@
+sgRNA-100sucrose	B2,B3,C2,C3
+sgRNA-80sucrose	B4,B5,C4,C5
+sgRNA-50sucrose	B6,B7,C6,C7
+sgRNA-20sucrose	B8,B9,C8,C9
+sgRNA-0sucrose	B10,B11,C10,C11
+NC-100sucrose	D2,D3,E2,E3
+NC-80sucrose	D4,D5,E4,E5
+NC-50sucrose	D6,D7,E6,E7
+NC-20sucrose	D8,D9,E8,E9
+NC-0sucrose	D10,D11,E10,E11
+PC-100sucrose	F2,F3,G2,G3
+PC-80sucrose	F4,F5,G4,G5
+PC-50sucrose	F6,F7,G6,G7
+PC-20sucrose	F8,F9,G8,G9
+PC-0sucrose	F10,F11,G10,G11
