@@ -1,8 +1,8 @@
-该文件为Tecan酶标仪进行生长曲线测定的数据后处理说明文件。
+该文件为Tecan酶标仪进行生长曲线(荧光测定)测定的数据后处理说明文件。
 
 需要准备的三个输入文件: rawdata.txt configure.txt prefix
 
-首先，rawdata.txt为原始数据文件，将Tecan酶标仪的数据文件拷贝出来（只需要数据部分，具体见文件夹里的example），新建txt文件，粘贴进去即可得到。一个example请见Tecan文件夹下的rawdata.txt
+首先，rawdata.txt为原始数据文件（OD600和荧光两种形式），将Tecan酶标仪的数据文件拷贝出来（只需要数据部分，具体见文件夹里的example），新建txt文件，粘贴进去即可得到。一个example请见Tecan文件夹下的rawdata.txt
 
 configure.txt用来描述96（or whatever）孔板和sample的对应关系。一个例子如下：
 mnmE-40-pH7     B2,B3,B4
@@ -31,8 +31,11 @@ prefix不是一个文件，只是一个名称，是输出文件名字的前缀�
 准备好以上文件之后，将所有文件放到桌面上的Tecan文件夹里面。然后打开Terminal，粘贴以下命令，
 cd ~/Desktop/Tecan/
 
-回车之后，粘贴以下命令：
+回车之后，粘贴以下命令。
+如果是OD600原始数据：
 python TecanDataProcessing.py rawdata.txt Configure.txt prefix
+如果是荧光原始数据：
+python TecanDataProcessingFLU.py rawdata.txt Configure.txt prefix
 其中，相应文件的名字请根据实际情况进行替换。
 
 运行正常，得到两个输出文件：
